@@ -6,13 +6,6 @@ raw_data = []
 
 filename = 'throw3'
 
-timestamps = []
-accx = []
-accy = []
-accz = []
-
-
-
 
 with open('data/'+filename+'.txt', 'r') as raw_datafile:
     raw_datafile.readline()
