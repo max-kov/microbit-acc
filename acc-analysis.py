@@ -5,7 +5,7 @@ import math
 # parsing the data
 raw_data = []
 
-filename = 'throw3'
+filename = 'throw4'
 
 def calc_resultant_force(row):
     return math.sqrt(row[1] ** 2 + row[2] ** 2 + row[3] ** 2)
@@ -36,7 +36,7 @@ plt.xlabel('time/ ms')
 plt.subplot(2, 1, 2)
 plt.title("resultant force")
 
-plt.plot(data[:, 0], resultant_force_data, label='acc in x')
+plt.plot(data[:, 0], resultant_force_data, label='resultant acceleration')
 
 plt.legend(loc=2)
 
