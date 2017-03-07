@@ -7,15 +7,8 @@ raw_data = []
 
 filename = 'throw3'
 
-timestamps = []
-accx = []
-accy = []
-accz = []
-
-
 def calc_resultant_force(row):
     return math.sqrt(row[1] ** 2 + row[2] ** 2 + row[3] ** 2)
-
 
 with open('data/' + filename + '.txt', 'r') as raw_datafile:
     raw_datafile.readline()
